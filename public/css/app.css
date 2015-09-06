@@ -1,0 +1,658 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300);
+html,
+button,
+input,
+select,
+textarea {
+  color: #222; }
+
+html {
+  font-size: 1em;
+  line-height: 1.4; }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical; }
+
+a {
+  text-decoration: none; }
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/*
+$primary-base: #28A55F;
+$primary-base-light: #4FDA8C;
+$primary-base-dark: #333;
+*/
+main {
+  position: relative;
+  margin: 0 auto;
+  min-width: 480px;
+  max-width: 768px;
+  min-height: 100%;
+  background: #ffffff; }
+
+#content {
+  margin: 0 auto; }
+
+header#header {
+  padding: 1em;
+  background: #0099cc;
+  line-height: 3em;
+  vertical-align: center; }
+
+#header__title {
+  float: left; }
+
+#home__option {
+  float: left;
+  margin-right: 2em; }
+
+.header__element {
+  height: 3em; }
+
+.header__option {
+  float: right; }
+
+.header__option--strippen span {
+  font-size: 2rem; }
+
+ul.nav__menu li {
+  position: relative; }
+  ul.nav__menu li a {
+    height: 3rem; }
+  ul.nav__menu li ul {
+    display: none;
+    position: absolute;
+    top: 4rem;
+    right: 0em;
+    padding: 0;
+    background: #2a6596; }
+    ul.nav__menu li ul li {
+      line-height: 5rem; }
+      ul.nav__menu li ul li a {
+        display: inline-block;
+        width: 12em;
+        padding: 0em 1em;
+        color: #ffffff; }
+    ul.nav__menu li ul li:hover {
+      background: #80B0D8; }
+      ul.nav__menu li ul li:hover a {
+        color: #000000; }
+
+#ship_info {
+  width: 90%;
+  padding: 0.5em 0;
+  margin: 0 auto;
+  text-align: center;
+  background: #bfe9ff;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em; }
+
+#ship_last_opening {
+  margin: 2em auto;
+  background: #30849E; }
+  #ship_last_opening a span {
+    color: #ffffff; }
+
+.list {
+  width: 100%; }
+
+.list__el {
+  width: 100%; }
+  .list__el span, .list__el img {
+    display: inline-block;
+    margin: 0;
+    line-height: 3em;
+    padding: 0 1em; }
+  .list__el .list__el__span--strippen {
+    width: 10%; }
+  .list__el .list__el__span--name {
+    width: 30%; }
+  .list__el img.list__el__img {
+    margin-top: .7em;
+    padding-left: 0;
+    float: right; }
+  .list__el .list__el__span--time {
+    float: right; }
+
+.list__el:nth-of-type(even) {
+  background: rgba(0, 0, 0, 0.02); }
+
+#addShip {
+  position: absolute;
+  bottom: 1em;
+  right: 1em; }
+
+input[type=text], input[type=email], input[type=password] {
+  width: 90%;
+  margin: 1em 5% 0; }
+
+input[type=radio] {
+  display: none; }
+
+.form-group--radio--boxes {
+  width: 100%;
+  margin: 2em auto;
+  text-align: center; }
+  .form-group--radio--boxes label {
+    display: inline-block;
+    padding: 1em 0;
+    width: 4em;
+    text-align: center;
+    border: 4px solid #0099cc;
+    border-radius: 5px; }
+
+input[type=radio]:checked + label {
+  background: #0099cc; }
+
+.form_options_group {
+  width: 90%;
+  margin: 1em 5%; }
+
+input[type=checkbox] {
+  width: auto; }
+
+input[type=checkbox].cb_hidden {
+  visibility: hidden;
+  display: none;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0; }
+
+form#ship_opening_list {
+  margin-top: 4em; }
+
+.form-group--vlist {
+  margin: 0;
+  padding: 0; }
+  .form-group--vlist label {
+    display: block;
+    margin: 0;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #505739; }
+
+.form-group--vlist input[type=checkbox]:checked + label {
+  background: #4bb2cc; }
+
+input[type=submit] {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 1.4rem;
+  line-height: 2em;
+  background: #00885D;
+  color: #ffffff; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+p, li, label, input {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  color: #333; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  color: #333; }
+
+a:hover {
+  color: #4FDA8C; }
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  color: #383838; }
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #6e6e6e; }
+
+/* ==========================================================================
+   Login Form
+   ========================================================================== */
+/*
+| Sizes
+*/
+.form-wrap {
+  text-align: left;
+  width: 320px; }
+
+/*
+| Native Core elements
+*/
+.form-wrap {
+  background-color: #fff;
+  margin: 0 auto;
+  box-shadow: 0 1px 8px #bebebe; }
+  .form-wrap .help-text {
+    margin-top: .6em; }
+    .form-wrap .help-text p {
+      font-size: 14px;
+      text-align: center; }
+
+.form-wrap__tabs {
+  overflow: hidden; }
+  .form-wrap__tabs h3 {
+    float: left;
+    width: 50%; }
+    .form-wrap__tabs h3 a {
+      padding: .5em 0;
+      text-align: center;
+      font-weight: 400;
+      background-color: #e6e7e8;
+      display: block;
+      color: #666; }
+    .form-wrap__tabs h3 a.active {
+      background-color: #fff; }
+
+.form-wrap__tabs__content {
+  padding: 1.5em; }
+  .form-wrap__tabs__content .active {
+    display: block !important; }
+
+div[id$="tab-content"] {
+  display: none; }
+
+input,
+textarea {
+  box-sizing: border-box;
+  color: inherit;
+  font-family: inherit;
+  padding: 0.8em 0 10px 0.8em;
+  border: 1px solid #cfcfcf;
+  outline: 0;
+  display: inline-block;
+  margin: 0 0 0.8em;
+  padding-right: 2em;
+  width: 100%; }
+
+.form-button {
+  width: 100%;
+  padding: 0.8em 0 10px 0.8em;
+  background-color: #3c474d;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase; }
+
+.form-button--postcheckbox {
+  margin-top: .8em; }
+
+.form-button:hover {
+  background-color: #1e8bc3; }
+
+.checkbox {
+  display: block;
+  visibility: hidden; }
+
+.checkbox:checked + label.checkbox_label:after {
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+  filter: alpha(opacity=100);
+  opacity: 1; }
+
+.checkbox_label[for] {
+  position: relative;
+  left: 15px;
+  top: -20px;
+  padding-left: 20px;
+  cursor: pointer; }
+
+.checkbox_label[for]:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #cfcfcf;
+  width: 17px;
+  height: 17px;
+  top: 0;
+  left: -14px; }
+
+.checkbox_label[for]:after {
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+  filter: alpha(opacity=0);
+  opacity: 0;
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  background-color: transparent;
+  top: 4px;
+  left: -10px;
+  border: 3px solid #3c474d;
+  border-top: 0;
+  border-right: 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+/*
+| Extended Core Elements
+*/
+.errormessage {
+  color: #c72626;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  margin-bottom: .6em; }
+
+/*
+| Specific Forms
+*/
+.authentication__container {
+  text-align: center; }
+
+.contact__comment_field {
+  height: 10em;
+  width: 100%; }
+
+.login-create {
+  display: block;
+  clear: both;
+  margin: 5px auto;
+  padding: 10px; }
+
+/*
+|  checkbox ul
+*/
+input[type=checkbox].toggle__checkbox {
+  display: none;
+  margin: 10px; }
+  input[type=checkbox].toggle__checkbox + label {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 0.8em 0 10px;
+    background-color: #e2e2e2;
+    border: 0;
+    color: #242628;
+    cursor: pointer; }
+
+input[type=checkbox].toggle__checkbox:checked + label {
+  background-image: none;
+  outline: 0;
+  background-color: #8c919b; }
+
+.profile h1 {
+  text-align: center; }
+
+.general_preferences {
+  display: block;
+  width: 100%;
+  height: 250px;
+  background: #883838; }
+
+/* ==========================================================================
+   Boxes and Buttons
+   ========================================================================== */
+.box {
+  display: inline-block;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+
+* {
+  margin: 0;
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  background: #f1f2f2;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px; }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px; }
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%; }
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+.invisible {
+  visibility: hidden; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1; }
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  a,
+  a:visited {
+    text-decoration: underline; }
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */ }
+  tr,
+  img {
+    page-break-inside: avoid; }
+  img {
+    max-width: 100% !important; }
+  @page {
+    margin: 0.5cm; }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+
+/*# sourceMappingURL=app.css.map */

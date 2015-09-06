@@ -1,0 +1,226 @@
+header#header {
+  padding: 1em;
+  background: #0099cc;
+  line-height: 3em;
+  vertical-align: center;
+
+
+}
+
+#header__title {
+  float: left;
+}
+
+#home__option {
+  float: left;
+  margin-right: 2em;
+}
+
+.header__element {
+  height: 3em;
+}
+
+.header__option {
+  float: right;
+}
+
+.header__option--strippen span{
+  font-size: 2rem;
+}
+
+ul.nav__menu{
+  li {
+    position: relative;
+    a {
+      height: 3rem;
+    }
+    ul {
+      display: none;
+      position: absolute;
+      top: 4rem;
+      right: 0em;
+
+      padding: 0;
+
+      background: #2a6596;
+
+      li {
+
+        line-height: 5rem;
+        a {
+          display: inline-block;
+          width: 12em;
+          padding: 0em 1em;
+          color: #ffffff
+        }
+      }
+      li:hover {
+        background: #80B0D8;
+
+        a {
+          color: #000000;
+        }
+      }
+    }
+
+  }
+}
+
+#ship_info {
+  width: 90%;
+  padding: 0.5em 0;
+  margin: 0 auto;
+  text-align: center;
+  background: rgb(191, 233, 255);
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+
+#ship_last_opening {
+  margin: 2em auto;
+  background: #30849E;
+  a {
+    span {
+      color: #ffffff;
+    }
+  }
+}
+
+
+.list {
+  width: 100%;
+}
+
+.list__el {
+  width: 100%;
+
+  span, img {
+    display: inline-block;
+    margin: 0;
+    line-height: 3em;
+    padding: 0 1em;
+  }
+
+  .list__el__span--strippen {
+    width: 10%;
+  }
+  .list__el__span--name {
+    width: 30%;
+  }
+
+  img.list__el__img {
+    margin-top: .7em;
+    padding-left: 0;
+    float: right;
+  }
+
+  .list__el__span--time {
+    float: right;
+  }
+
+
+}
+
+.list__el:nth-of-type(even) {
+  background: rgba(0,0,0,0.02);
+}
+
+.list__el__el{
+}
+
+
+
+
+#addShip {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+
+input[type=text], input[type=email], input[type=password] {
+  width: 90%;
+  margin: 1em 5% 0;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.form-group--radio--boxes {
+  width: 100%;
+  margin: 2em auto;
+  text-align: center;
+  label {
+    display: inline-block;
+    padding: 1em 0;
+    width: 4em;
+    text-align: center;
+    border: 4px solid #0099cc;
+    border-radius: 5px;
+  }
+}
+
+input[type=radio]:checked + label {
+  background: #0099cc;
+}
+
+.form_options_group {
+  width: 90%;
+  margin: 1em 5%;
+}
+
+input[type=checkbox] {
+  width: auto;
+}
+
+input[type=checkbox].cb_hidden {
+  visibility: hidden;
+  display: none;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+form#ship_opening_list {
+  margin-top: 4em;
+}
+
+.form-group--vlist {
+  margin: 0;
+  padding: 0;
+
+  label {
+    display: block;
+    margin: 0;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+
+    border-radius:15px;
+    cursor:pointer;
+    color:#505739;
+  }
+
+}
+
+
+.form-group--vlist input[type=checkbox]:checked + label {
+  background: #4bb2cc;
+}
+
+input[type=submit] {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+
+  font-size: 1.4rem;
+  line-height: 2em;
+  background: #00885D;
+  color: #ffffff;
+
+}
+

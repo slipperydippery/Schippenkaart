@@ -1,0 +1,170 @@
+.playlist__wrap {
+  margin: 1em auto;
+  width: 320px;
+  background: #fff;
+  box-shadow: 0 1px 8px #bebebe;
+}
+
+.playlist__content {
+  position: relative;
+  padding: 1.5em;
+}
+
+.playlist__edit {
+  position: absolute;
+  top: 0;
+  left: -4em;
+  width: 4em;
+  height: 2.6em;
+
+  a {
+    margin: .8em;
+    color: $secondary-base-light;
+  }
+
+}
+
+
+.access__container {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $greyscale-light;
+    padding: .5em 1em;
+  }
+}
+
+ul.playlist__list {
+  position: relative;
+  text-align: left;
+}
+
+li.playlist__scenario {
+  display: block;
+  width: 100%;
+  background-color: $greyscale-light;
+  border: 0;
+  color: $greyscale-dark;
+  cursor: pointer;
+
+  a {
+    display: block;
+    padding: .8em 10px;
+  }
+}
+
+.form__wrap__profile {
+  display: none;
+  visibility: hidden;
+  transition: .125s linear;
+}
+
+
+
+
+#read-more {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+[for="read-more"] {
+  display: block;
+  width: 100%;
+  margin: 2em 0 1em;
+  background-color: $greyscale-light;
+  border: 0;
+  color: $greyscale-dark;
+  cursor: pointer;
+
+  span {
+    display: block;
+    padding: .8em 10px;
+  }
+
+  :hover {
+    background: rgba(0, 0, 0, .5);
+    color: rgb(255, 255, 255);
+  }
+
+  span:last-of-type {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+input[type=checkbox]:checked ~ .form__wrap__profile {
+  display: block;
+  visibility: visible;
+  width: 100%;
+}
+
+
+input[type=checkbox]:checked ~ [for="read-more"] span:first-of-type {
+  display: none;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="read-more"] span:last-of-type {
+  display: block;
+  visibility: visible;
+}
+
+/*
+| Radio button Access Controll
+*/
+.access__slider {
+  position: absolute;
+  top: -1.5em;
+  right: -1.5em;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+
+  input[type=radio] {
+    float: right;
+    display: none;
+
+    :checked {
+      opacity: 1;
+    }
+
+
+
+    + label {
+      display: inline-block;
+      text-align: center;
+      width: 30%;
+      padding: .5em 0;
+      margin: 0;
+
+      font-size: .8em;
+
+      background-color: $greyscale-light;
+      border: 0;
+      color: $greyscale-dark;
+      cursor: pointer;
+    }
+
+
+
+  }
+
+}
+
+
+input[type=radio]:checked  + label {
+  background-image: none;
+  outline: 0;
+  background-color: $greyscale-medium;
+    }

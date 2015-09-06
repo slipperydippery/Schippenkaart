@@ -1,0 +1,34 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300);
+
+p, li, label, input {
+  font-family: $base-font-family;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  color: #333;
+
+}
+
+a:hover {
+  color: #4FDA8C;
+}
+
+h1 {
+  font-family: $base-font-family;
+  //font-weight: $header-font-weight;
+  font-size: 3rem;
+  color: #383838;
+}
+
+h3 {
+  font-family: $base-font-family;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #6e6e6e;
+}

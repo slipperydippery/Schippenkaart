@@ -1,0 +1,49 @@
+
+
+// Use Compass ('cause it rocks!)
+//@import "compass";
+
+// Font weights
+$light: 100;
+$regular: 400;
+$bold: 600;
+
+// Base Font
+$base-font-family: "Raleway", sans-serif;
+$base-font-family-small: arial, sans-serif;
+$base-font-weight: $regular;
+$base-font-size: 16px;
+$base-font-size-small: 13px;
+$base-line-height: 26px;
+
+// Fixed Font
+$fixed-font-family: monospace;
+$fixed-font-size: 85%;
+$fixed-line-height: $base-line-height;
+
+// Headings
+$header-font-weight: $bold;
+
+//colors
+
+
+$greyscale-light:#e2e2e2;
+$greyscale-medium:#8c919b;
+$greyscale-medium-dark:#5f5f5f;
+$greyscale-dark:#242628;
+
+
+/*
+$primary-base: #28A55F;
+$primary-base-light: #4FDA8C;
+$primary-base-dark: #333;
+*/
+$primary-base: #3c474d;
+$primary-base-light: #1e8bc3;
+$primary-base-dark: #282f33;
+
+$secondary-base: #28A55F;
+$secondary-base-light: #4FDA8C;
+$secondary-base-dark: #333;
+
+//@import "modules/all";

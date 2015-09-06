@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Frontpage
+   ========================================================================== */
+
+.frontpage {
+  width:100%;
+  height:100%;
+  /*background:url(../img/Venus.jpg) no-repeat center center fixed;*/
+  text-align:center;
+}
+
+.frontpage__form{
+  position:absolute;
+  top:50%;
+  width:100%;
+}
+
+body {
+  color: #666;
+  background-color: #f1f2f2;
+  font: 16px/26px "Raleway", sans-serif;
+  font: $base-font-size/$base-line-height $base-font-family;
+}

@@ -1,0 +1,216 @@
+/* ==========================================================================
+   Login Form
+   ========================================================================== */
+/*
+| Sizes
+*/
+.form-wrap {
+  text-align: left;
+  width: 320px;
+}
+
+
+/*
+| Native Core elements
+*/
+
+.form-wrap {
+  background-color: #fff;
+  margin: 0 auto;
+  box-shadow: 0 1px 8px #bebebe;
+
+  .help-text {
+    margin-top: .6em;
+
+    p {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}
+
+.form-wrap__tabs {
+  overflow: hidden;
+
+  h3 {
+    float: left;
+    width: 50%;
+
+    a {
+      padding: .5em 0;
+      text-align: center;
+      font-weight: 400;
+      background-color: #e6e7e8;
+      display: block;
+      color: #666;
+    }
+
+    a.active {
+      background-color: #fff;
+    }
+
+  }
+}
+
+
+.form-wrap__tabs__content {
+  padding: 1.5em;
+
+  .active {
+    display: block !important;
+  }
+}
+
+div[id$="tab-content"] {
+  display: none;
+}
+
+
+input,
+textarea {
+  box-sizing: border-box;
+  color: inherit;
+  font-family: inherit;
+  padding: .8em 0 10px .8em;
+  border: 1px solid #cfcfcf;
+  outline: 0;
+  display: inline-block;
+  margin: 0 0 .8em;
+  padding-right: 2em;
+  width: 100%;
+}
+
+.form-button {
+  width: 100%;
+  padding: .8em 0 10px .8em;
+  background-color: $primary-base;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.form-button--postcheckbox {
+  margin-top: .8em;
+}
+
+.form-button:hover {
+  background-color: $primary-base-light;
+}
+
+.checkbox {
+  display: block;
+  visibility: hidden;
+}
+
+.checkbox:checked + label.checkbox_label:after {
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.checkbox_label[for] {
+  position: relative;
+  left: 15px;
+  top: -20px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.checkbox_label[for]:before {
+  content: '';
+  position: absolute;
+  border: 1px solid #cfcfcf;
+  width: 17px;
+  height: 17px;
+  top: 0;
+  left: -14px;
+}
+
+.checkbox_label[for]:after {
+  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+  filter: alpha(opacity=0);
+  opacity: 0;
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  background-color: transparent;
+  top: 4px;
+  left: -10px;
+  border: 3px solid $primary-base;
+  border-top: 0;
+  border-right: 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+
+/*
+| Extended Core Elements
+*/
+
+.errormessage {
+  color: #c72626;
+  font-family: $base-font-family-small;
+  font-size: $base-font-size-small;
+  margin-bottom: .6em;
+}
+
+
+/*
+| Specific Forms
+*/
+
+
+.authentication__container {
+  text-align: center;
+}
+
+
+.contact__comment_field {
+  height: 10em;
+  width: 100%;
+}
+
+
+.login-create {
+  display: block;
+  clear: both;
+  margin: 5px auto;
+  padding: 10px;
+}
+
+
+/*
+|  checkbox ul
+*/
+
+
+input[type=checkbox].toggle__checkbox {
+  display:none;
+  margin:10px;
+
+  + label {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: .8em 0 10px;
+    background-color: $greyscale-light;
+    border: 0;
+    color: $greyscale-dark;
+    cursor: pointer;
+  }
+}
+
+
+input[type=checkbox].toggle__checkbox:checked + label {
+  background-image: none;
+  outline: 0;
+  background-color: $greyscale-medium;
+}
+
+
