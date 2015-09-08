@@ -8,6 +8,7 @@ use App\Http\Requests\ShipRequest;
 use App\Opening;
 use App\Ship;
 use Request;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
 use Carbon\Carbon;
 
@@ -21,9 +22,14 @@ class ShipsController extends Controller
 
     public function index ()
     {
+        $user = Auth::user();
+        $favships = Ship::wherehas('userFavorite', function($q) use($user)
+        {
+            $q->where('id', $user->id);
+        })->orderBy('name', 'ASC')->get();
         $ships = Ship::orderBy('name', 'ASC')->get();
 
-        return view ('ships.index', compact('ships'));
+        return view ('ships.index', compact('favships', 'ships', 'user'));
     }
 
     public function show ($id)

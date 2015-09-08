@@ -23,6 +23,16 @@ class CreateShipsTable extends Migration
             $table->integer('bridges_total');
             $table->timestamps();
         });
+
+        Schema::create('ship_user', function(Blueprint $table){
+            $table->integer('ship_id')->unsigned()->index();
+            $table->foreign('ship_id')->references('id')->on('ships')->onDelete('cascade');
+
+            $table->integer('user_id')->unsigned()->index();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+
+            $table->timestamps();
+        });
     }
 
     /**
@@ -33,5 +43,6 @@ class CreateShipsTable extends Migration
     public function down()
     {
         Schema::drop('ships');
+        Schema::drop('ship_user');
     }
 }

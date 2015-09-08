@@ -250,6 +250,8 @@ table {
     background: rgba(0, 0, 0, 0.02); }
   table tr.ship_index__row td a {
     line-height: 5rem; }
+  table tr.ship_index__row td.ship_favorite {
+    width: 3rem; }
 
 .list {
   width: 100%;
