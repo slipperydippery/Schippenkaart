@@ -227,7 +227,6 @@ table.list {
     overflow: hidden; }
     table.list tr td {
       line-height: 3rem;
-      max-width: 50%;
       overflow: hidden; }
       table.list tr td span {
         padding: 0 0.5rem; }
@@ -260,8 +259,6 @@ table.list {
     padding: 0 1em; }
   .list__el .list__el__span--strippen {
     width: 10%; }
-  .list__el .list__el__span--name {
-    width: 30%; }
   .list__el img.list__el__img {
     margin-top: .7em;
     padding-left: 0;
@@ -549,8 +546,19 @@ input[type=checkbox].toggle__checkbox:checked + label {
 html, body {
   height: 100%;
   background: #f1f2f2;
-  font-family: Helvetica, sans-serif;
-  font-size: 16px; }
+  font-family: Helvetica, sans-serif; }
+
+@media (min-width: 600px) {
+  html, body {
+    font-size: 16px; } }
+
+@media all and (min-width: 450px) and (max-width: 600px) {
+  html, body {
+    font-size: 14px; } }
+
+@media all and (min-width: 0px) and (max-width: 450px) {
+  html, body {
+    font-size: 12px; } }
 
 /* ==========================================================================
    Helper classes

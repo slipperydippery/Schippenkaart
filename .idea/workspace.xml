@@ -25,16 +25,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="list.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/openings/list.blade.php">
+      <file leaf-file-name="_ships.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/assets/sass/partials/_ships.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8451613" vertical-offset="147" max-vertical-offset="1232">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding>
-                <marker date="1441714602117" expanded="true" signature="42:185" placeholder="..." />
-                <marker date="1441714602117" expanded="true" signature="238:385" placeholder="..." />
-                <marker date="1441714602117" expanded="true" signature="436:579" placeholder="..." />
-              </folding>
+            <state vertical-scroll-proportion="0.6903226" vertical-offset="1435" max-vertical-offset="5684">
+              <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -63,7 +59,6 @@
         <option value="$PROJECT_DIR$/app/Http/Requests/ShipRequest.php" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/public/css/icono.min.css" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/partials/header.blade.php" />
         <option value="$PROJECT_DIR$/public/js/nav__menu__onClick.js" />
         <option value="$PROJECT_DIR$/resources/views/ships/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/ships/create.blade.php" />
@@ -91,15 +86,16 @@
         <option value="$PROJECT_DIR$/resources/assets/sass/partials/_layout.scss" />
         <option value="$PROJECT_DIR$/resources/views/layouts/partials/nav.blad.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/master.blade.php" />
-        <option value="$PROJECT_DIR$/resources/assets/sass/app.scss" />
         <option value="$PROJECT_DIR$/resources/views/layouts/partials/menu.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/ships/ship.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/partials/nav.blade.php" />
         <option value="$PROJECT_DIR$/public/js/nav__menu__onclick.js" />
         <option value="$PROJECT_DIR$/resources/assets/sass/partials/_nav.scss" />
         <option value="$PROJECT_DIR$/resources/assets/sass/partials/_typography.scss" />
-        <option value="$PROJECT_DIR$/resources/assets/sass/partials/_ships.scss" />
         <option value="$PROJECT_DIR$/resources/views/openings/list.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/partials/header.blade.php" />
+        <option value="$PROJECT_DIR$/resources/assets/sass/app.scss" />
+        <option value="$PROJECT_DIR$/resources/assets/sass/partials/_ships.scss" />
       </list>
     </option>
   </component>
@@ -550,13 +546,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46451613" vertical-offset="0" max-vertical-offset="1085">
-          <caret line="18" column="69" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/openings/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1114">
@@ -695,22 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/partials/_layout.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36129034" vertical-offset="0" max-vertical-offset="1085">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18490566" vertical-offset="2912" max-vertical-offset="9968">
-          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/menu.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.025806451" vertical-offset="0" max-vertical-offset="1085">
@@ -769,23 +742,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/sass/partials/_ships.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.716129" vertical-offset="679" max-vertical-offset="5740">
-          <caret line="52" column="3" selection-start-line="52" selection-start-column="3" selection-end-line="52" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/openings/list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8451613" vertical-offset="147" max-vertical-offset="1232">
           <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
-            <marker date="1441714602117" expanded="true" signature="42:185" placeholder="..." />
-            <marker date="1441714602117" expanded="true" signature="238:385" placeholder="..." />
-            <marker date="1441714602117" expanded="true" signature="436:579" placeholder="..." />
+            <marker date="1441714602117" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1441714602117" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1441714602117" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/partials/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30967742" vertical-offset="0" max-vertical-offset="1085">
+          <caret line="12" column="72" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18801843" vertical-offset="3548" max-vertical-offset="10500">
+          <caret line="134" column="3" selection-start-line="134" selection-start-column="3" selection-end-line="134" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/partials/_layout.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36129034" vertical-offset="0" max-vertical-offset="1085">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/sass/partials/_ships.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6903226" vertical-offset="1435" max-vertical-offset="5684">
+          <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -26,7 +26,6 @@ table.list {
     overflow: hidden;
     td {
       line-height: 3rem;
-      max-width: 50%;
       overflow: hidden;
       span {
         padding: 0 .5rem;
@@ -78,7 +77,6 @@ table.list {
     width: 10%;
   }
   .list__el__span--name {
-    width: 30%;
   }
 
   img.list__el__img {
