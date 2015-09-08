@@ -257,7 +257,7 @@ table {
   width: 100%; }
   #ship_last_opening td {
     line-height: 4rem;
-    width: 33%; }
+    white-space: nowrap; }
     #ship_last_opening td span {
       color: #ffffff;
       padding: 0 2 rem; }
