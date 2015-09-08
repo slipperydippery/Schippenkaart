@@ -10,17 +10,29 @@
     </a>
 
     <table id="ship_last_opening">
-        <a href = "{{ route('openings.showtype', ['ship', $ship->id]) }}">
-            <tr>
-                @if(!$ship->openings->isEmpty())
-                    <td class="list__el__span--name"><span>{{ $ship->openings->last()->bridge_name }}</span> </td>
-                    <td class="list__el__span--user"><span>{{ $ship->openings->last()->user_name  }}</span></td>
-                    <td class="list__el__span--time"><span>{{ $ship->openings->last()->created_at->diffForHumans() }}</span> </td>
-                @else
-                    <td>Nog geen gegevens</td>
-                @endif
-            </tr>
-        </a>
+        <tr>
+            @if(!$ship->openings->isEmpty())
+
+                <td class="list__el__span--name">
+                    <a href = "{{ route('openings.showtype', ['ship', $ship->id]) }}">
+                        <span>{{ $ship->openings->last()->bridge_name }}</span>
+                    </a>
+                </td>
+                <td class="list__el__span--user">
+                    <a href = "{{ route('openings.showtype', ['ship', $ship->id]) }}">
+                        <span>{{ $ship->openings->last()->user_name  }}</span>
+                    </a>
+                </td>
+                <td class="list__el__span--time">
+                    <a href = "{{ route('openings.showtype', ['ship', $ship->id]) }}">
+                        <span>{{ $ship->openings->last()->created_at->diffForHumans() }}</span>
+                    </a>
+                </td>
+            @else
+                <td>Nog geen gegevens</td>
+            @endif
+        </tr>
+
 
     </table>
 

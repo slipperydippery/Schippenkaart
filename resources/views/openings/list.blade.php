@@ -1,12 +1,19 @@
-@if($opening_type == 'ship')
-    @extends('layouts.master', ['home_option' => 'ships', 'header_route' => 'ships.show', 'header_route_id' => $object->id, 'header_name' => $object->name ])
-@endif
-@if($opening_type == 'bridge')
-    @extends('layouts.master', ['home_option' => 'bridges', 'header_route' => 'bridges.show', 'header_route_id' => $object->id, 'header_name' => $object->name ])
-@endif
-@if($opening_type == 'user')
-    @extends('layouts.master', ['home_option' => 'ships', 'header_route' => 'ships.show', 'header_route_id' => $object->id, 'header_name' => $object->name ])
-@endif
+<?php
+    if($opening_type == 'ship') {
+        $home_option = 'ships';
+        $header_route = 'ships.show';
+    }
+    else if($opening_type == 'bridge'){
+        $home_option = 'bridges';
+        $header_route = 'bridges.show';
+    }
+    else if($opening_type == 'user') {
+        $home_option = 'ships';
+        $header_route = 'ships.show';
+    }
+?>
+
+@extends('layouts.master', ['home_option' => $home_option, 'header_route' => $header_route, 'header_route_id' => $object->id, 'header_name' => $object->name ])
 
 @section('content')
 

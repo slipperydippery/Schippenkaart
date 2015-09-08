@@ -27,6 +27,12 @@ table {
     td {
       line-height: 3rem;
       overflow: hidden;
+      a {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        padding: 0 1rem;
+      }
       span {
         padding: 0 .5rem;
       }
@@ -61,7 +67,6 @@ table {
   width: 100%;
   td{
     line-height: 4rem;
-    padding: 0 1rem;
     width: 33%;
     span {
       color: #ffffff;

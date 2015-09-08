@@ -228,6 +228,11 @@ table {
     table tr td {
       line-height: 3rem;
       overflow: hidden; }
+      table tr td a {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        padding: 0 1rem; }
       table tr td span {
         padding: 0 0.5rem; }
       table tr td .ship_name__container {
@@ -250,7 +255,6 @@ table {
   width: 100%; }
   #ship_last_opening td {
     line-height: 4rem;
-    padding: 0 1rem;
     width: 33%; }
     #ship_last_opening td span {
       color: #ffffff;
