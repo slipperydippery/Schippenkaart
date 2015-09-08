@@ -20,7 +20,7 @@
 
 
 table {
-  max-width: 100%;
+  width: 100%;
   tr {
     height: 3rem;
     overflow: hidden;
@@ -43,7 +43,6 @@ table {
     td.bridge_name, td.user_name, td.time {
       white-space: nowrap;
     }
-
     td.remove {
       width: 2rem;
       img {
@@ -52,9 +51,15 @@ table {
       }
     }
   }
-
   tr:nth-of-type(even) {
     background: rgba(0, 0, 0, 0.02);
+  }
+  tr.ship_index__row {
+    td {
+      a {
+        line-height: 5rem;
+      }
+    }
   }
 }
 

@@ -2,17 +2,19 @@
 
 @section('content')
 
-<ul class="list list--ships">
+<table class="ship_index">
     @foreach ($ships as $ship)
-        <li class="list__el list__el--ship">
-            <a href = "{{ route('ships.show', $ship->id) }}">
-                <span class="list__el__el list__el__span--strippen">{{ $ship->strippen_total }}</span>
-                <span class="list__el__el">{{ $ship->name }}</span>
+        <tr class="ship_index__row">
+            <td>
+                <a href = "{{ route('ships.show', $ship->id) }}">
+                    <span class="list__el__el list__el__span--strippen">{{ $ship->strippen_total }}</span>
+                    <span class="list__el__el">{{ $ship->name }}</span>
 
-            </a>
-        </li>
+                </a>
+            </td>
+        </tr>
     @endforeach
-</ul>
+</table>
 
 <div id="addShip">
     <a href="{{ route('ships.create') }}"><img src="{{ url('img/add_icon.svg') }}"/> </a>
