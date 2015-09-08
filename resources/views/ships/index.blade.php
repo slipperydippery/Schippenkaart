@@ -7,7 +7,7 @@
         <li class="list__el list__el--ship">
             <a href = "{{ route('ships.show', $ship->id) }}">
                 <span class="list__el__el list__el__span--strippen">{{ $ship->strippen_total }}</span>
-                <span class="list__el__el list__el__span--name">{{ $ship->name }}</span>
+                <span class="list__el__el">{{ $ship->name }}</span>
 
             </a>
         </li>

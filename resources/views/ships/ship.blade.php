@@ -1,4 +1,4 @@
-@extends('layouts.master', ['home_option' => 'ships', 'header_route' => 'ships.edit', 'header_route_id' => $ship->id, 'header_name' => $ship->name, 'header_option' => 'strippen' ])
+@extends('layouts.master', ['home_option' => 'ships', 'header_route' => 'ships.edit', 'header_route_id' => $ship->id, 'header_name' => $ship->name, 'strippen' => 'strippen' ])
 
 @section('content')
 

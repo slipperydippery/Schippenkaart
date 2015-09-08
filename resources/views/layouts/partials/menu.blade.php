@@ -1,5 +1,5 @@
 
-<ul class="nav__menu">
+<ul id="nav__menu">
     <li>
         <a href="#" id="nav__icon" class="header__element header__option"><img src="{{ url('img/menu_icon.svg') }}"/></a>
         <ul>

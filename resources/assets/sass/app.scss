@@ -108,14 +108,15 @@ a {
 @import "partials/base";
 
 // Partials
-@import "partials/layout";
-@import "partials/ships";
 @import "partials/reset";
+@import "partials/layout";
+@import "partials/nav";
+@import "partials/ships";
 @import "partials/typography";
 @import "partials/forms";
 @import "partials/profile";
 //@import "partials/frontpage";
-@import "partials/boxesbuttons";
+//@import "partials/boxesbuttons";
 //@import "partials/playlists";
 
 //@import "partials/buttons";

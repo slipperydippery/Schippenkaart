@@ -10,30 +10,30 @@
 
 @section('content')
 
-<ul class="list list--ships">
+<table class="list">
     @foreach ($openings as $opening)
-        <li class="list__el">
+        <tr>
             @if($opening_type != 'ship')
-                <span class="list__el__el list__el__span--name">{{ $opening->ship_name }}</span>
+                <td class="ship_name"><div class="ship_name__container"><span>{{ $opening->ship_name }}</span></div></td>
             @endif
             @if($opening_type != 'bridge')
-                <span class="list__el__el list__el__span--name">{{ $opening->bridge_name }}</span>
+                <td class="bridge_name"><span>{{ $opening->bridge_name }}</span></td>
             @endif
             @if($opening_type != 'user')
-                <span class="list__el__el list__el__span--user">{{ $opening->user_name }}</span>
+                <td class="user_name"><span>{{ $opening->user_name }}</span></td>
             @endif
+            <td class="time"><span>{{ $opening->created_at->format("H:m - d M y") }}</span></td>
 
-            @if($user->id == $opening->user_id)
-                <a href=" {{ URL::route('openings.delete', [$opening_type, $opening->id]) }}">
-                    <img class="list__el__el list__el__img list__el__img--undo" src="{{ url('img/remove.svg') }}"/>
-                </a>
-            @else
-                    <img class="list__el__el list__el__img list__el__img--undo" src="{{ url('img/blank.svg') }}"/>
-            @endif
-            <span class="list__el__el list__el__span--time">{{ $opening->created_at->format("H:m -- d.m.y") }}</span>
-        </li>
+
+            <td class="remove">
+                @if($user->id == $opening->user_id)
+                    <a href=" {{ URL::route('openings.delete', [$opening_type, $opening->id]) }}">
+                        <img class="list__el__el list__el__img list__el__img--undo" src="{{ url('img/remove.svg') }}"/>
+                    </a>
+                @endif
+            </td>
+        </tr>
     @endforeach
-</ul>
-
+</table>
 
 @stop
