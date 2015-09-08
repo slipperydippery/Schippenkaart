@@ -168,6 +168,8 @@ nav {
       overflow: hidden; }
     nav > ul li.nav_menu {
       width: 5rem; }
+    nav > ul li.nav_auth_alternate {
+      width: 6rem; }
 
 .nav_strippen {
   position: absolute;
