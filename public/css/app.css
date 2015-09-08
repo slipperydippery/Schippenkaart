@@ -570,11 +570,11 @@ html, body {
 
 @media all and (min-width: 450px) and (max-width: 600px) {
   html, body {
-    font-size: 14px; } }
+    font-size: 13px; } }
 
 @media all and (min-width: 0px) and (max-width: 450px) {
   html, body {
-    font-size: 12px; } }
+    font-size: 10px; } }
 
 /* ==========================================================================
    Helper classes
