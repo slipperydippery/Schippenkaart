@@ -11,6 +11,7 @@ class Ship extends Model
         'owner_first',
         'owner_last',
         'owner_email',
+        'owner_phonenumber',
         'strippen_total'
     ];
 

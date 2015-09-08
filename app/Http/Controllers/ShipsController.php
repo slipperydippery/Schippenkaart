@@ -40,14 +40,7 @@ class ShipsController extends Controller
 
     public function store (ShipRequest $request)
     {
-
         $ship = Ship::create($request->all());
-        //$ship->name = $request->name;
-        //$ship->owner_first = $request->owner_first;
-        //$ship->strippen_total = $request->strippen_total;
-        //$ship->save();
-        //return $ship;
-        //return $request->all();
         return redirect('ships');
     }
 

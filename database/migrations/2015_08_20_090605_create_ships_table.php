@@ -18,6 +18,7 @@ class CreateShipsTable extends Migration
             $table->string('owner_first');
             $table->string('owner_last');
             $table->string('owner_email');
+            $table->string('owner_phonenumber');
             $table->integer('strippen_total');
             $table->integer('bridges_total');
             $table->timestamps();

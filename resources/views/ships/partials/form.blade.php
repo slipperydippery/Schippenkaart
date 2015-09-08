@@ -18,6 +18,11 @@
 	{!! Form::email('owner_email', null, ['placeholder' => 'Email', 'class' => 'form-control']) !!}
 </div>
 
+<!-- Owner Phonenumber Form Input -->
+<div class="form-group">
+	{!! Form::text('owner_phonenumber', null, ['placeholder' => 'Phone number', 'class' => 'form-control']) !!}
+</div>
+
 @if($create)
     <!--  Form Input -->
     <div class="form-group form-group--radio form-group--radio--boxes">

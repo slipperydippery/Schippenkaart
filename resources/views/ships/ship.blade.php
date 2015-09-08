@@ -5,7 +5,8 @@
     <a href="{{ URL::route('ships.edit', $ship->id) }}">
         <div id="ship_info">
             <p>{{ $ship->owner_first . ' ' . $ship->owner_last }}</p>
-             <p><span>{{ $ship->owner_email }}</span></p>
+            <p><span>{{ $ship->owner_email }}</span></p>
+            <p><span>{{ $ship->owner_phonenumber }}</span></p>
         </div>
     </a>
 
