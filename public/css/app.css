@@ -220,31 +220,43 @@ ul#nav__menu {
   #ship_last_opening a span {
     color: #ffffff; }
 
-table.list {
+table {
   max-width: 100%; }
-  table.list tr {
+  table tr {
     height: 3rem;
     overflow: hidden; }
-    table.list tr td {
+    table tr td {
       line-height: 3rem;
       overflow: hidden; }
-      table.list tr td span {
+      table tr td span {
         padding: 0 0.5rem; }
-      table.list tr td .ship_name__container {
+      table tr td .ship_name__container {
         height: 3rem; }
-    table.list tr td.bridge_name, table.list tr td.user_name, table.list tr td.time {
+    table tr td.bridge_name, table tr td.user_name, table tr td.time {
       white-space: nowrap; }
-    table.list tr td.remove {
+    table tr td.remove {
       width: 2rem; }
-      table.list tr td.remove img {
+      table tr td.remove img {
         position: relative;
         top: .5rem; }
-  table.list tr:nth-of-type(even) {
+  table tr:nth-of-type(even) {
     background: rgba(0, 0, 0, 0.02); }
 
 .list {
   width: 100%;
   display: table; }
+
+#ship_last_opening {
+  width: 100%; }
+  #ship_last_opening td {
+    line-height: 4rem;
+    padding: 0 1rem;
+    width: 33%; }
+    #ship_last_opening td span {
+      color: #ffffff;
+      padding: 0 2 rem; }
+  #ship_last_opening td.list__el__span--time {
+    text-align: right; }
 
 .list__el {
   display: table-row;

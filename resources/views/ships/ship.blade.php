@@ -9,20 +9,20 @@
         </div>
     </a>
 
-    <ul id="ship_last_opening">
+    <table id="ship_last_opening">
         <a href = "{{ route('openings.showtype', ['ship', $ship->id]) }}">
-            <li class="list__el">
+            <tr>
                 @if(!$ship->openings->isEmpty())
-                    <span class="list__el__span--name">{{ $ship->openings->last()->bridge_name }} </span>
-                    <span class="list__el__span--user">{{ $ship->openings->last()->user_name  }}</span>
-                    <span class="list__el__span--time">{{ $ship->openings->last()->created_at->diffForHumans() }} </span>
+                    <td class="list__el__span--name"><span>{{ $ship->openings->last()->bridge_name }}</span> </td>
+                    <td class="list__el__span--user"><span>{{ $ship->openings->last()->user_name  }}</span></td>
+                    <td class="list__el__span--time"><span>{{ $ship->openings->last()->created_at->diffForHumans() }}</span> </td>
                 @else
-                    <span>Nog geen gegevens</span>
+                    <td>Nog geen gegevens</td>
                 @endif
-            </li>
+            </tr>
         </a>
 
-    </ul>
+    </table>
 
 
     {!! Form::open(['route' => 'openings.store', 'id' =>  'ship_opening_list']) !!}

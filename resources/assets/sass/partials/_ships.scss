@@ -19,7 +19,7 @@
 }
 
 
-table.list {
+table {
   max-width: 100%;
   tr {
     height: 3rem;
@@ -55,6 +55,23 @@ table.list {
 .list {
   width: 100%;
   display: table;
+}
+
+#ship_last_opening {
+  width: 100%;
+  td{
+    line-height: 4rem;
+    padding: 0 1rem;
+    width: 33%;
+    span {
+      color: #ffffff;
+      padding: 0 2 rem;
+    }
+  }
+  td.list__el__span--time{
+    text-align: right;
+
+  }
 }
 
 .list__el {
