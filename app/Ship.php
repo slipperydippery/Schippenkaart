@@ -19,4 +19,9 @@ class Ship extends Model
     {
         return $this->hasMany('App\Opening');
     }
+
+    public function userFavorite()
+    {
+        return $this->belongsToMany('App\User')->withTimestamps();
+    }
 }

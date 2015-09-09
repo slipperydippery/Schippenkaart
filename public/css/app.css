@@ -250,6 +250,8 @@ table {
     background: rgba(0, 0, 0, 0.02); }
   table tr.ship_index__row td a {
     line-height: 5rem; }
+  table tr.ship_index__row td.ship_favorite {
+    width: 3rem; }
 
 .list {
   width: 100%;
@@ -320,6 +322,16 @@ input[type=radio]:checked + label {
 
 input[type=checkbox] {
   width: auto; }
+
+label.favorite_ship, label.standard_ship {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 2px solid black; }
+
+label.favorite_ship {
+  background: #37556B; }
 
 input[type=checkbox].cb_hidden {
   visibility: hidden;
