@@ -27,9 +27,23 @@ class ShipsController extends Controller
         {
             $q->where('id', $user->id);
         })->orderBy('name', 'ASC')->get();
-        $ships = Ship::orderBy('name', 'ASC')->get();
+        $allships = Ship::orderBy('name', 'ASC')->get();
+        $ships= $allships->diff($favships);
 
         return view ('ships.index', compact('favships', 'ships', 'user'));
+    }
+
+    public function favorite ()
+    {
+        if(null !== Request::input('standard_ship_id'))
+        {
+            Auth::user()->favoriteShips()->attach(Request::input('standard_ship_id'));
+        }
+        elseif (null !== Request::input('favorite_ship_id'))
+        {
+            Auth::user()->favoriteShips()->detach(Request::input('favorite_ship_id'));
+        }
+        return redirect ('ships');
     }
 
     public function show ($id)

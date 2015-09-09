@@ -24,6 +24,7 @@ Route::get('item', ['as' => 'item', 'uses' => 'PagesController@item']);
 
 Route::resource('ships', 'ShipsController');
 Route::get('ships/{ship}/purchase', ['as' => 'ships.purchase', 'uses' => 'ShipsController@purchace']);
+Route::post('ships/favorite', ['as' => 'ships.favorite', 'uses' => 'ShipsController@favorite']);
 Route::patch('ships/{ship}/purchase', ['as' => 'ships.purchased', 'uses' => 'ShipsController@purchased']);
 
 Route::get('bridges', ['as' => 'bridges.index', 'uses' => 'BridgesController@index']);

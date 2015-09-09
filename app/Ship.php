@@ -22,6 +22,6 @@ class Ship extends Model
 
     public function userFavorite()
     {
-        return $this->belongsToMany('App\User');
+        return $this->belongsToMany('App\User')->withTimestamps();
     }
 }

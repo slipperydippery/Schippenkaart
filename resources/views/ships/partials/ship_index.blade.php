@@ -9,11 +9,30 @@
                 </a>
             </td>
             <td class="ship_favorite">
-                @foreach( $ship->userFavorite()->lists('id') as $id)
-                    @if($id == $user->id)
-                        <img src="{{ url('img/star.svg') }}"/>
+
+                <?php
+                 $match = 0;
+                foreach( $ship->userFavorite()->lists('id') as $id)
+                {
+                    if($id == $user->id)
+                    {
+                        $match = 1;
+                    }
+                }
+                ?>
+                    {!! Form::open(['route' => 'ships.favorite']) !!}
+                    @if($match == 1)
+                        {!! Form::checkbox('favorite_ship_id', $ship->id, true, ['class' => 'form-control cb_hidden', 'onClick' => 'this.form.submit()']) !!}
+                        {!! Form::label('favorite_ship_id', ' ', ['class' => 'favorite_ship', 'onClick' => 'this.form.submit()']) !!}
+                        {!! Form::hidden('favorite_ship_id', $ship->id) !!}
+                    @else
+                        {!! Form::checkbox('favorite_ship_id', $ship->id, null, ['class' => 'form-control cb_hidden standard_ship', 'onClick' => 'this.form.submit()']) !!}
+                        {!! Form::label('favorite_ship_id', ' ', ['class' => 'standard_ship', 'onClick' => 'this.form.submit()']) !!}
+                        {!! Form::hidden('standard_ship_id', $ship->id) !!}
                     @endif
-                @endforeach
+
+                    {!! Form::close() !!}
+
 
             </td>
         </tr>

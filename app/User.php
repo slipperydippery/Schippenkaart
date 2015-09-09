@@ -39,6 +39,6 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
     }
 
     public function favoriteShips(){
-        $this->belongsToMany('App\Ship');
+        return $this->belongsToMany('App\Ship')->withTimestamps();
     }
 }
