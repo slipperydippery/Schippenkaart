@@ -8,8 +8,8 @@
         $header_route = 'bridges.show';
     }
     else if($opening_type == 'user') {
-        $home_option = 'ships';
-        $header_route = 'ships.show';
+        $home_option = 'users';
+        $header_route = 'users.show';
     }
 ?>
 

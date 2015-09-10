@@ -21,9 +21,13 @@ nav {
         display: block;
       }
     }
+    li.nav_home_fill{
+      width: 5rem;
+    }
     li.nav_home_option {
       width: 5rem;
       background: #5AC7F3;
+      box-shadow: inset -23px 0px 30px -23px rgba(0,0,0,0.65);
       img {
         height: 3rem;
         width: auto;

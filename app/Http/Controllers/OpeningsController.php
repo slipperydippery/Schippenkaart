@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Bridge;
 use App\Opening;
 use App\Ship;
+use App\User;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -82,6 +83,7 @@ class OpeningsController extends Controller
     public function showtype($type, $id)
     {
         //return($type);
+        //return($id);
         $user = Auth::user();
         if($type == 'ship')
         {
@@ -100,6 +102,7 @@ class OpeningsController extends Controller
         }
         elseif($type == 'user')
         {
+            $user = User::find($id);
             $object = $user;
             $openings = Opening::latest()->where('user_id', $user->id)->get();
             $opening_type = 'user';

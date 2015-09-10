@@ -1,4 +1,4 @@
-@extends('layouts.master', ['home_option' => 'ships',  'header_route' => 'bridges.index', 'header_name' => 'Bruggen'])
+@extends('layouts.master', ['header_route' => 'bridges.index', 'header_name' => 'Bruggen'])
 
 @section('content')
 

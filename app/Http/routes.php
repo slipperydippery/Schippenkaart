@@ -34,3 +34,5 @@ Route::get('bridges/{opening}/delete', ['as' => 'bridges.delete', 'uses' => 'Bri
 Route::resource('openings', 'OpeningsController');
 Route::get('openings/showtype/{type}/{id}', ['as' => 'openings.showtype', 'uses' => 'OpeningsController@showtype']);
 Route::get('openings/delete/{type}/{id}', ['as' => 'openings.delete', 'uses' => 'OpeningsController@delete']);
+
+Route::resource('users', 'UsersController');

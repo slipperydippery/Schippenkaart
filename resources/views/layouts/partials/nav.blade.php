@@ -1,15 +1,24 @@
 <ul>
-    <li class="nav_home_option">
-        @if($home_option == 'ships')
-            <a href="{{ URL::route('ships.index') }}" class="header__element" id="home__option" >
-                <div class="header__element" id="home_option"><img src="{{ url('img/ship_icon.svg') }}"/></div>
-            </a>
-        @elseif($home_option == 'bridges')
-            <a href="{{ URL::route('bridges.index') }}" class="header__element" id="home__option" >
-                <div class="header__element" id="home_option"><img src="{{ url('img/bridge_icon.svg') }}"/></div>
-            </a>
-        @endif
-    </li>
+    @if(isset($home_option))
+        <li class="nav_home_option">
+            @if($home_option == 'ships')
+                <a href="{{ URL::route('ships.index') }}" class="header__element" id="home__option" >
+                    <div class="header__element" id="home_option"><img src="{{ url('img/ship_icon.svg') }}"/></div>
+                </a>
+            @elseif($home_option == 'bridges')
+                <a href="{{ URL::route('bridges.index') }}" class="header__element" id="home__option" >
+                    <div class="header__element" id="home_option"><img src="{{ url('img/bridge_icon.svg') }}"/></div>
+                </a>
+            @elseif($home_option == 'users')
+                <a href="{{ URL::route('users.index') }}" class="header__element" id="home__option" >
+                    <div class="header__element" id="home_option"><img src="{{ url('img/users_icon.svg') }}"/></div>
+                </a>
+            @endif
+        </li>
+    @else
+        <li class="nav_home_fill"></li>
+    @endif
+
 
     <li class="nav_title">
         @if(isset($header_route_id))
