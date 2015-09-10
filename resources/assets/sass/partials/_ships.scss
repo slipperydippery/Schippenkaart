@@ -18,6 +18,9 @@
   }
 }
 
+table.ship_index {
+  border-bottom: 1px solid #888;
+}
 
 table {
   width: 100%;
@@ -54,6 +57,7 @@ table {
   tr:nth-of-type(even) {
     background: rgba(0, 0, 0, 0.02);
   }
+
   tr.ship_index__row {
     td {
       a {
@@ -176,16 +180,19 @@ input[type=checkbox] {
 
 label.favorite_ship, label.standard_ship {
   display: inline-block;
-  width: 2rem;
-  height: 2rem;
+  position: relative;
+  top: .3rem;
+  width: 1.6rem;
+  height: 1.6rem;
   border-radius: 50%;
-  border: 2px solid black;
+  border: 1px solid #383838;
 
 }
 label.favorite_ship {
   background: #37556B;
 }
 label.standard_ship {
+  background: #ffffff;
 }
 
 input[type=checkbox].cb_hidden {

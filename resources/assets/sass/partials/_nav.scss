@@ -12,6 +12,10 @@ nav {
       list-style: none;
       display: table-cell;
       line-height: 5rem;
+      img {
+        height: 3rem;
+        width: auto;
+      }
 
       a{
         display: block;
@@ -19,7 +23,10 @@ nav {
     }
     li.nav_home_option {
       width: 5rem;
+      background: #5AC7F3;
       img {
+        height: 3rem;
+        width: auto;
         position: absolute;
         top: 1rem;
         left: 1rem;
@@ -41,12 +48,17 @@ nav {
 
 .nav_strippen {
   position: absolute;
-  top: 0.8rem;
-  right: 2.5rem;
+  top: 0.6rem;
+  right: 3rem;
+
+  text-align: center;
   font-size: 1.4rem;
-  background: #0F3D52;
+  background: #106186;
   color: #ffffff;
-  padding: 1.2rem;
+
+  width: 3.8rem;
+  height: 3.8rem;
+  padding: 1.2rem 0;
   border-radius: 50%;
 
 
@@ -69,8 +81,10 @@ ul#nav__menu{
       height: 3rem;
     }
     ul {
-       display: none;
+      display: none;
+      z-index: 100;
       position: absolute;
+      top: 4rem;
       right: 0em;
       padding: 0;
 
